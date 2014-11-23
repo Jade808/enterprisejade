@@ -6,6 +6,8 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+  
+  
 <body>
 
   <div class="container"> 
@@ -21,7 +23,11 @@
    </ul>
  
     <p class="notice"><%= notice %></p>
+    <% if alert %>
     <p class="alert"><%= alert %></p>
+<% end %>
+    
+    
     
     <%= yield %>
  
