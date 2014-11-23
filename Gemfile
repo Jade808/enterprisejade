@@ -37,3 +37,9 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass', '~> 2.3.1.0'
 
 gem 'devise'
+
+gem 'rails_12factor'
+
+ruby '2.1.1'
+
+
