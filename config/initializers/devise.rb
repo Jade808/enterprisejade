@@ -258,6 +258,6 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = '/my_engine/users/auth'
   
 
-  ActionMailer::Base.default_url_options = { :host => "localhost:3000" }
+  ActionMailer::Base.default_url_options = { :host => "http://enterprisejade.herokuapp.com/" }
 
 end
