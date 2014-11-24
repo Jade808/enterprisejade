@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   get 'welcome/pricing'
 
+  get "/sign_up" =>  "devise/registrations#new"
   resources :invoices
 
   root to: 'welcome#index'
@@ -21,7 +22,6 @@ Rails.application.routes.draw do
   
 devise_scope :user do
  
-  get "/sign_up" => 'u' "devise/registrations#new"
 end
   
   
