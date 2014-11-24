@@ -18,6 +18,12 @@ Rails.application.routes.draw do
 
   root to: 'welcome#index'
   
+  devise_scope :user do
+  get "/sign_up" => "devise/registrations#new"
+end
+  
+  
+  
   resources :users
   
   
