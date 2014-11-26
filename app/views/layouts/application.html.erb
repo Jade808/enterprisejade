@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head> <%= favicon_link_tag 'favicon.ico' %> 
+<head> 
   <title>Enterprisejade</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -33,7 +33,9 @@
 <% else %>
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-    </p>
+    
+   
+
       
       <% end %>
     
@@ -41,17 +43,17 @@
     
     
     
-    
-    
+  
     <p class="notice"><%= notice %></p>
     <% if alert %>
-    <p class="alert"><%= alert %></p>
+    <p class="alert"><%= alert %></p> 
 <% end %>
-    
-    
+
+
     
     <%= yield %>
- 
+
+    
   </div>
 
   </body>
