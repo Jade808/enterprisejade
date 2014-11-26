@@ -95,6 +95,6 @@ Rails.application.configure do
 
   ActionMailer::Base.delivery_method = :smtp
 
-  config.action_mailer.default_url_options = { :host => 'enterprisejade.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'localhost' port: 3000 }
 end
 
